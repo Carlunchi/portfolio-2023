@@ -26,7 +26,8 @@
     left: 50%;
     transform: translateX(-50%);
     height: 0px;
-    width: 18px;
+    width: 10px;
+    border-radius: 20px;
     background: linear-gradient(rgb(74, 225, 255),rgb(150, 4, 255), transparent);
     transition: all 2.5s;
   }

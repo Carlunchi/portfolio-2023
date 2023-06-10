@@ -90,7 +90,7 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 to="art"
                 smooth={true}
@@ -101,7 +101,7 @@ const Navbar = () => {
               >
                 {isEnglish ? "ART GALLERY" : "GALERÍA"}
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link
@@ -127,25 +127,26 @@ const Navbar = () => {
               >
                 {isEnglish ? "CONTACT ME" : "CONTÁCTAME"}
               </Link>
-            </li><div className="language-container">
-            <h3
-       className={`languageEn ${isEnglish ? "active" : ""}`}
-       onClick={() => handleLanguageClick("en")}
-       disabled={isEnglish}
-            >
-              EN
-            </h3>
-            <span style={{color: "white"}}>/</span>
-            <h3
-        className={`languageEs ${isEnglish ? "" : "active"}`}
-        onClick={() => handleLanguageClick("es")}
-        disabled={!isEnglish}v
-            >
-              ES
-            </h3>
-          </div>
+            </li>
+            <div className="language-container">
+              <h3
+                className={`languageEn ${isEnglish ? "active" : ""}`}
+                onClick={() => handleLanguageClick("en")}
+                disabled={isEnglish}
+              >
+                EN
+              </h3>
+              <span style={{ color: "white" }}>/</span>
+              <h3
+                className={`languageEs ${isEnglish ? "" : "active"}`}
+                onClick={() => handleLanguageClick("es")}
+                disabled={!isEnglish}
+                v
+              >
+                ES
+              </h3>
+            </div>
           </ul>
-          
         </div>
       </div>
     </div>

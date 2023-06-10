@@ -196,150 +196,43 @@ const Contact = () => {
       <span className="bg-span"></span>
       <span className="bg-span"></span>
       <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
-      <span className="bg-span"></span>
 
       <div className="contact-container" data-aos="fade-down">
         <div className="content-contact">
           <h2>{isEnglish ? "CONTACT ME" : "CONTÁCTAME"}</h2>
-          <div className="form">
-            <div className="input-box">
-              <input
-                type="text"
-                required
-                value={selectedNombre}
-                style={{
-                  border:
-                    showValidationError && !selectedNombre
-                      ? "1px solid red"
-                      : "none",
-                }}
-                onChange={(event) => setSelectedNombre(event.target.value)}
-              />
-              <i>{isEnglish ? "Name" : "Nombre"}</i>
-            </div>
-
-            <div className="input-box">
-              <input
-                type="text"
-                required
-                value={selectedCorreo}
-                style={{
-                  border:
-                    showValidationError && !selectedCorreo
-                      ? "1px solid red"
-                      : "none",
-                }}
-                onChange={(event) => setSelectedCorreo(event.target.value)}
-              />
-              <i>Mail</i>
-            </div>
-
-            <div className="input-box">
-              <input
-                type="text"
-                required
-                value={selectedAsunto}
-                style={{
-                  border:
-                    showValidationError && !selectedAsunto
-                      ? "1px solid red"
-                      : "none",
-                }}
-                onChange={(event) => setSelectedAsunto(event.target.value)}
-              />
-              <i>{isEnglish ? "Subject" : "Asunto"}</i>
-            </div>
-
-            <div className="input-box-message" value={selectedMensaje}>
-              <textarea
-                value={selectedMensaje}
-                style={{
-                  border:
-                    showValidationError && !selectedMensaje
-                      ? "1px solid red"
-                      : "none",
-                }}
-                onChange={(event) => setSelectedMensaje(event.target.value)}
-              ></textarea>
-              <i>{isEnglish ? "Message" : "Mensaje"}</i>
-            </div>
-
-            <div className="input-box">
-              <button onClick={sendForm}>{isEnglish ? "SEND" : "ENVIAR"}</button>
-            </div>
-            <div className="btn-p">
-              {showValidationError && (
-                <p className="error-p">{isEnglish ? "Please fill out all the required fields." : "Complete todos los campos por favor."}</p>
-              )}
-              {showMessage && (
-                <div
-                  className={`modal ${
-                    modalIsOpen ? "modal" : modalIsClose ? "modal-show" : ""
-                  }`}
-                >
-                  <span></span>
-                  <img
-                    className="astro5"
-                    src="../../images/astro5.png"
-                    alt="astro message"
-                  />
-                  <p className="success-p">{isEnglish ? "Message sent." : "Mensaje enviado."}</p>
-                  <button className="modal-close" onClick={closeModal}>
-                    Ok
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
+          <h4>
+            {isEnglish
+              ? "Hoping to make your dreams come true"
+              : "Esperando hacer tus sueños realidad"}
+          </h4>
         </div>
-
         <ul className="effect3">
           <li className="red-li" style={{ "--clr": "#00afff" }}>
-            <a href="https://www.linkedin.com/in/lisbauer/" target="blank" alt="linkedin-icon">
+            <a
+              href="https://www.linkedin.com/in/carla-formento/"
+              target="blank"
+              alt="linkedin-icon"
+            >
               <FontAwesomeIcon className="fonticon" icon={faLinkedin} />
               <span className="icon-span">Linkedin</span>
             </a>
           </li>
           <li className="red-li" style={{ "--clr": "#b900ff" }}>
-            <a href="https://github.com/Lisbauer" target="blank" alt="github-icon">
+            <a
+              href="https://github.com/Carlunchi"
+              target="blank"
+              alt="github-icon"
+            >
               <FontAwesomeIcon className="fonticon" icon={faSquareGithub} />
               <span className="icon-span">Github</span>
             </a>
           </li>
           <li className="red-li" style={{ "--clr": "#8fce00" }}>
-            <a href="mailto:lisabauer.dev@gmail.com" target="blank" alt="gmail-icon">
+            <a
+              href="mailto:cformento54@gmail.com"
+              target="blank"
+              alt="gmail-icon"
+            >
               <FontAwesomeIcon className="fonticon" icon={faEnvelope} />
               <span className="icon-span">Gmail</span>
             </a>

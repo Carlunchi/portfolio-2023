@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url(../../../public/images/askyfullofstars2.png); 
+    /* background-image: url(../../../public/images/askyfullofstars2.png);  */
     background-size: cover;
 }
 .about-container{
@@ -18,6 +18,7 @@
 .text-img-box{
     display: flex;
     transition: ease-in-out 0.5s;
+   
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
@@ -61,9 +62,10 @@
     height: 310px;
 }
 .linkedin-pic{
-    width: 220px;
+    width: 200px;
     height: 270px;
-    transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out; 
+   
 }
 .linkedin-pic:hover{
     transition: 0.7s ease-in-out;

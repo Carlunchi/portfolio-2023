@@ -1,4 +1,4 @@
-.imagelist-container{
+/* .imagelist-container{
   height: 100vh;
   background-image: url(../../../public/images/askyfullofstars2.png);
   background-size: cover;
@@ -48,7 +48,7 @@
   transform-origin: center;
 }
   /* BUBBLES*/ 
-.bubbles{
+/* .bubbles{
   display: flex;
   z-index: 0;
 }
@@ -329,4 +329,4 @@
     left: 11%;
     font-size: 11px;
   }
-}
+}  */

@@ -156,8 +156,6 @@
     animation-delay: 4.75;
 } 
 
-
-/* H1 LISA BAUER */
 .h1-intro{
     font-size: 110px;
     color: rgba(169, 103, 255, 0);
@@ -174,37 +172,10 @@
         background-position: 2000px 0;
     }
 }
-/* astro img */ 
-.astro2{
-    width: 400px;
-    position: absolute;
-    top: 20%;
-    left: 4%;
-    animation: astrofloat2 20s linear infinite;
-}
-@keyframes astrofloat2 {
-    0% {
-      transform: rotate(0deg) translateX(10px);
-    }
-    25% {
-      transform: rotate(10deg) translateX(10px);
-    }
-    50% {
-      transform: rotate(0deg) translateX(10px);
-    }
-    75% {
-      transform: rotate(-10deg) translateX(10px);
-    }
-    100% {
-      transform: rotate(0deg) translateX(10px);
-    }
-  }
+
+
   @media (max-width: 1280px) {
-    .astro2 {
-      width: 330px;
-      top: 30%;
-      left: 3%;
-    }
+  
     .h1-intro{
         top: 25%;
         font-size: 100px;
@@ -220,12 +191,7 @@
     }
 }
   @media (max-width: 900px) {
-    .astro2 {
-      width: 300px;
-      top: 56%;
-      left: 33%;
-      z-index: 7;
-    }
+ 
     .home-section{
         height: 1000px;
         margin-top: 0;
@@ -250,11 +216,7 @@
     }
 }
 @media (max-width: 500px) {
-    .astro2 {
-      width: 200px;
-      top: 55%;
-      left: 23%;
-    }
+
     .home-section{
         height: 800px;
     }

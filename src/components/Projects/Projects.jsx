@@ -8,23 +8,23 @@ const Projects = () => {
   return (
     <div className="projectmain">
       <div className="project-main">
-      <div className="myproject" data-aos="zoom-in">
-  <span>{isEnglish ? "M" : "M"}</span>
-  <span>{isEnglish ? "Y " : "I "}</span>
-  <span>{isEnglish ? "P" : "S "}</span>
-  <span>{isEnglish ? "R" : "P"}</span>
-  <span>{isEnglish ? "O" : "R"}</span>
-  <span>{isEnglish ? "J" : "O"}</span>
-  <span>{isEnglish ? "E" : "Y"}</span>
-  <span>{isEnglish ? "C" : "E"}</span>
-  <span>{isEnglish ? "T" : "C"}</span>
-  <span>{isEnglish ? "S" : "T"}</span>
-  <span>{isEnglish ? "" : "O"}</span>
-  <span>{isEnglish ? "" : "S"}</span>
-</div>
+        <div className="myproject" data-aos="zoom-in">
+          <span>{isEnglish ? "M" : "M"}</span>
+          <span>{isEnglish ? "Y " : "I "}</span>
+          <span>{isEnglish ? "P" : "S "}</span>
+          <span>{isEnglish ? "R" : "P"}</span>
+          <span>{isEnglish ? "O" : "R"}</span>
+          <span>{isEnglish ? "J" : "O"}</span>
+          <span>{isEnglish ? "E" : "Y"}</span>
+          <span>{isEnglish ? "C" : "E"}</span>
+          <span>{isEnglish ? "T" : "C"}</span>
+          <span>{isEnglish ? "S" : "T"}</span>
+          <span>{isEnglish ? "" : "O"}</span>
+          <span>{isEnglish ? "" : "S"}</span>
+        </div>
 
         <h2 className="project-text" data-aos="zoom-out-down">
-        {isEnglish ? "MY PROJECTS" : "MIS PROYECTOS"}
+          {isEnglish ? "MY PROJECTS" : "MIS PROYECTOS"}
         </h2>
 
         <div className="project-container">
@@ -36,15 +36,20 @@ const Projects = () => {
             <div className="project-imgBx">
               <img
                 className="project-img"
-                src="../../images/project-1.png"
+                src="../../images/propTech.jpeg"
                 alt="awg project"
               />
             </div>
             <div className="project-content">
-              <h2>AWG</h2>
-              <p>{isEnglish ? "My first landing page, my first freelance job, and my first time working together with a UX/UI designer" : "Mi primer página landing, mi primer trabajo freelance, y mi primera vez trabajando junto a una diseñadora UX/UI.  "}
+              <h2>PROPTECH</h2>
+              <p>
+                {isEnglish
+                  ? "Final Project carried out in Henry's Bootcamp, the purpose of which is to streamline operations in the real estate sector. It was carried out together with seven other colleagues, being my job the design of the frontend."
+                  : "Proyecto Final realizado en el Bootcamp de Henry , la finalidad del mismo es la agilización en las operaciones del rubro inmobiliario. Se realizo en conjunto con otros siete compañeros, siendo mi trabajo el diseño del frontend."}
               </p>
-              <a href="">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+              <a href="https://proptech.bio/" target="_blank">
+                {isEnglish ? "CHECK OUT" : "EXPLORAR"}
+              </a>
             </div>
           </div>
 
@@ -56,15 +61,23 @@ const Projects = () => {
             <div className="project-imgBx">
               <img
                 className="project-img"
-                src="../../images/project-2.png"
+                src="../../images/dogpedia.jpeg"
                 alt="picture"
               />
             </div>
             <div className="project-content">
-              <h2>GEEKWORLD</h2>
-              <p>{isEnglish ? "My first website made with HTML, CSS, Bootstrap, and Sass, an ecommerce site for a fictional collectible figurine store." : "Mi primer sitio web hecho con HTML, CSS, Bootstrap y Sass, un eCommerce para una tienda ficticia dedicada a la venta de figuras coleccionables"}
+              <h2>DOGPEDIA</h2>
+              <p>
+                {isEnglish
+                  ? "Project dedicated to information on dog breeds, as well as the creation of a new one."
+                  : "Proyecto dedicado a la información de razas de perros, como así también a la creación de una nueva."}
               </p>
-              <a href="https://lisbauer.github.io/geekworld/index.html" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+              <a
+                href="https://www.youtube.com/watch?v=8Pc2IJh3GL8&t=5s"
+                target="_blank"
+              >
+                {isEnglish ? "CHECK OUT" : "EXPLORAR"}
+              </a>
             </div>
           </div>
 
@@ -76,15 +89,23 @@ const Projects = () => {
             <div className="project-imgBx">
               <img
                 className="project-img"
-                src="../../images/projectma.png"
+                src="../../images/rickandmorty.jpeg"
                 alt="picture"
               />
             </div>
             <div className="project-content">
-              <h2>M.A</h2>
-              <p>{isEnglish ? "An eCommerce for the brand M.A, still in progress." : "Una tienda online para la marca de ropa M.A, en progreso"}
+              <h2>Rick and Morty</h2>
+              <p>
+                {isEnglish
+                  ? "Integrator Project, in which we had to put into practice our learned knowledge, both on the frontend side and on the backend."
+                  : "Proyecto Integrador, en el cual debiamos poner en practica nuestros conocimientos aprendidos, tanto en el lado del fronend como en el backend."}
               </p>
-              <a href="">{isEnglish ? "IN PROGRESS" : "EN PROGRESO"}</a>
+              <a
+                href="https://www.youtube.com/watch?v=POSaw0MjRu8"
+                target="_blank"
+              >
+                {isEnglish ? "CHECK OUT" : "EXPLORAR"}
+              </a>
             </div>
           </div>
         </div>

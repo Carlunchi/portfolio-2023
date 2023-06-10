@@ -18,11 +18,11 @@ function App() {
     <Router>
       <LanguageProvider>
       <div className="App">
-        <div id="intro">
+        {/* <div id="intro">
           <Routes>
             <Route path="/intro" element={<Intro />} />
           </Routes>
-        </div>
+        </div> */}
         <div className="bg" id="home">
           <div id="navbar">
             <Routes>
@@ -59,12 +59,12 @@ function App() {
               <Route path="/" element={<Projects />} />
             </Routes>
           </div>
-
+{/* 
           <div id="art">
             <Routes>
               <Route path="/" element={<Art />} />
             </Routes>
-          </div>
+          </div> */}
 
           <div id="certificate">
             <Routes>
